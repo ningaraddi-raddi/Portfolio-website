@@ -104,6 +104,14 @@
     filter: grayscale(0%);
 }
 
+.floating-heart {
+    position: absolute;
+    bottom: 0;
+    font-size: 24px;
+    pointer-events: none;
+    z-index: 10;
+}
+
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column-reverse;
