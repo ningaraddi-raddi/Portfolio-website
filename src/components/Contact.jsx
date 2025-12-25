@@ -18,6 +18,9 @@ const Contact = () => {
                 <p className="contact-text">
                     I am currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
+                <div style={{ marginBottom: '20px', fontSize: '18px', color: 'var(--accent-cyan)', fontFamily: 'var(--font-mono)' }}>
+                    ningaraddi225@gmail.com
+                </div>
                 <a className="contact-btn" href="mailto:ningaraddi225@gmail.com">
                     Say Hello
                 </a>
