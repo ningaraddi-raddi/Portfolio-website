@@ -1,0 +1,122 @@
+.experience-section {
+    max-width: 700px;
+}
+
+.inner {
+    display: flex;
+}
+
+.tab-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tab-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--tab-height);
+    padding: 0 20px 2px;
+    background-color: transparent;
+    border-left: 2px solid var(--lightest-navy);
+    color: var(--slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-button:hover,
+.tab-button:focus {
+    background-color: var(--light-navy);
+    color: var(--green);
+}
+
+.tab-button.active {
+    color: var(--green);
+    border-left-color: var(--green);
+}
+
+.tab-panels {
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.tab-panel {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+}
+
+.job-title {
+    margin-bottom: 2px;
+    font-size: var(--fz-xxl);
+    font-weight: 500;
+    color: var(--lightest-slate);
+}
+
+.company {
+    color: var(--green);
+}
+
+.job-range {
+    margin-bottom: 25px;
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+}
+
+.job-description {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: var(--fz-lg);
+}
+
+.job-description li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.job-description li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+}
+
+@media (max-width: 600px) {
+    .inner {
+        flex-direction: column;
+    }
+
+    .tab-list {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 30px;
+        overflow-x: auto;
+        border-left: 0;
+    }
+
+    .tab-button {
+        border-left: 0;
+        border-bottom: 2px solid var(--lightest-navy);
+        min-width: 120px;
+        justify-content: center;
+    }
+
+    .tab-button.active {
+        border-left: 0;
+        border-bottom: 2px solid var(--green);
+    }
+}

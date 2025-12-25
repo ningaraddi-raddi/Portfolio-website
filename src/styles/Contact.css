@@ -1,0 +1,36 @@
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: clamp(40px, 5vw, 60px);
+    margin: 0 0 20px;
+    color: var(--lightest-slate);
+}
+
+.contact-text {
+    color: var(--slate);
+    font-size: var(--fz-lg);
+    margin-bottom: 50px;
+}
+
+.contact-btn {
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    background-color: var(--green-tint);
+}
